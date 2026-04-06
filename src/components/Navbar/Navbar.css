@@ -1,0 +1,142 @@
+/* RESET BÁSICO */
+body {
+    margin: 0;
+    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.encabezado {
+    position: fixed; /* 🔥 clave */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+
+    background: linear-gradient(135deg, #0a0f1c, #0f172a);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    gap: 50px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO */
+.logo {
+    width: 60px;
+    padding: 3px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+.Contacto {
+text-decoration: none;
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+  color: white;
+  padding: 8px 22px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Hover */
+.Contacto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.6);
+}
+
+/* Click */
+.Contacto:active {
+  transform: scale(0.95);
+}
+
+
+/* CONTENEDOR NAV */
+.menu_opciones {
+    display: flex;
+    gap: 30px;
+}
+
+/* LINKS */
+.menu_opciones a {
+    text-decoration: none;
+     color: #e2e8f0;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO LINEA */
+.menu_opciones a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00e0ff;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.menu_opciones a:hover::after {
+    width: 100%;
+}
+
+.menu_opciones a:hover {
+    color: #00e0ff;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* RESPONSIVE 🔥 */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu_opciones {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%; /* 🔥 ocupa todo el ancho */
+    
+    background: #0f172a;
+
+    flex-direction: column;
+    padding: 20px;
+
+    display: none;
+
+    border-radius: 0 0 12px 12px; /* más limpio */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+    .menu_opciones.active {
+        display: flex;
+    }
+
+    .menu_opciones a {
+        text-align: center;
+    }
+}

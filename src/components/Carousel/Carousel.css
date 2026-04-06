@@ -1,0 +1,45 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+
+    background: linear-gradient(90deg, #020617, #020617);
+}
+
+/* TRACK EN MOVIMIENTO */
+.carousel-track {
+    display: flex;
+    gap: 30px;
+
+    width: max-content;
+
+    animation: scroll 25s linear infinite;
+}
+
+/* IMÁGENES */
+.carousel-track img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+/* HOVER PRO */
+.carousel-track img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* ANIMACIÓN CONTINUA 🔥 */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

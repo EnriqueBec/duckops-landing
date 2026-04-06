@@ -1,0 +1,29 @@
+.proyects {
+    padding: 30px 40px;
+    background: #020617;
+    color: white;
+    text-align: center;
+}
+
+.proyects h2 {
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.proyects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #22d3ee;
+}
