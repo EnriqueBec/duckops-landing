@@ -9,12 +9,11 @@ function Contact(){
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                action="/gracias"
+                action="/gracias.html"
                 className="form"
                 data-aos="zoom-in"
                 data-aos-delay="100"
             >
-                {/* 🔥 MUY IMPORTANTE */}
                 <input type="hidden" name="form-name" value="contact" />
 
                 <input 
