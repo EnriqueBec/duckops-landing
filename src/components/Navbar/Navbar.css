@@ -138,5 +138,6 @@ text-decoration: none;
 
     .menu_opciones a {
         text-align: center;
+        margin-right: 80px;
     }
 }
