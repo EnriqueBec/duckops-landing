@@ -22,7 +22,7 @@ function Contact(){
 
         setTimeout(() => {
             setEnviado(false);
-        }, 8000);
+        }, 4000);
     };
 
     return(
