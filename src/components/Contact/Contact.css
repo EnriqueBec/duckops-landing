@@ -56,7 +56,6 @@ h2{
     animation: fadeIn 0.4s ease;
 }
 
-/* ENTRADA */
 @keyframes fadeIn {
     from {
         opacity: 0;

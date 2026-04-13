@@ -16,13 +16,11 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* ICONO */
 .whatsapp-btn img {
     width: 50px;
     z-index: 2;
 }
 
-/* ONDAS */
 .waves {
     position: absolute;
     width: 100%;
@@ -30,7 +28,6 @@
     border-radius: 50%;
 }
 
-/* ANIMACIÓN */
 .waves::before,
 .waves::after {
     content: "";
@@ -42,7 +39,6 @@
     animation: wave 2s infinite;
 }
 
-/* segunda onda retrasada */
 .waves::after {
     animation-delay: 1s;
 }
@@ -58,7 +54,6 @@
     }
 }
 
-/* HOVER */
 .whatsapp-btn:hover {
     transform: scale(1.1);
 }

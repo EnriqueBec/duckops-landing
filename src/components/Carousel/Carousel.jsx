@@ -12,7 +12,6 @@ function Carousel(){
         "/img/proyects/proyect5.jpeg",
     ];
 
-    // duplicamos para efecto infinito 🔥
     const allImages = [...images, ...images];
 
     return(

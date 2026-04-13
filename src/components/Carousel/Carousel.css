@@ -6,7 +6,6 @@
     background: linear-gradient(90deg, #020617, #020617);
 }
 
-/* TRACK EN MOVIMIENTO */
 .carousel-track {
     display: flex;
     gap: 30px;
@@ -16,7 +15,6 @@
     animation: scroll 25s linear infinite;
 }
 
-/* IMÁGENES */
 .carousel-track img {
     width: 400px;
     height: 250px;
@@ -28,13 +26,11 @@
     opacity: 0.7;
 }
 
-/* HOVER PRO */
 .carousel-track img:hover {
     transform: scale(1.1);
     opacity: 1;
 }
 
-/* ANIMACIÓN CONTINUA 🔥 */
 @keyframes scroll {
     0% {
         transform: translateX(0);

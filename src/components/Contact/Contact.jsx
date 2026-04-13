@@ -36,7 +36,6 @@ function Contact(){
                 className="form"
                 onSubmit={handleSubmit}
             >
-                {/* 🔥 necesario para Netlify */}
                 <input type="hidden" name="form-name" value="contact" />
 
                 <input name="nombre" type="text" placeholder="Nombre" required />
@@ -48,7 +47,6 @@ function Contact(){
                 </button>
             </form>
 
-            {/* 🔥 TOAST */}
             {enviado && (
                 <div className="toast">
                     ✅ Mensaje enviado correctamente 🚀
